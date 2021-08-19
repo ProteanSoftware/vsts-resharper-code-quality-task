@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
-    "id": "resharper-code-analysis",
+    "id": "resharper-code-inspections",
     "name": "Resharper Code Quality Analysis",
-    "version": "2.0.15",
-    "publisher": "alanwales",
-	"public": true,
+    "version": "1.0.3",
+    "publisher": "AshleyMedway",
+	"public": false,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -12,7 +12,7 @@
     ],    
     "description": "Run the Resharper Command-Line Tool and automatically fail builds when code quality issues are found. Configure team-shared coding rules for seamless code quality standards enforcement on each commit",
     "categories": [
-        "Build and release"
+        "Azure Pipelines"
     ],
     "icons": {
         "default": "extension-icon.png"        
@@ -32,7 +32,7 @@
     ],
     "files": [
         {
-            "path": "task"
+            "path": "Task"
         },
 		{
             "path": "images",

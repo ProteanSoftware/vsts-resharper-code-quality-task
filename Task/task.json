@@ -1,6 +1,6 @@
 ﻿{
-    "id": "357E581F-2683-4AC4-AFF6-2C2445F063C5",
-    "name": "ResharperCli",
+    "id": "357E581F-2683-4AC4-AFF6-2C2445F063C6",
+    "name": "ResharperAnalysis",
     "friendlyName": "Resharper Code Quality Analysis",
     "description": "Runs the Resharper Command-Line Tool and fails the build if code quality issues are found",
     "helpMarkDown": "[More Information](https://www.jetbrains.com/resharper/features/command-line.html)",
@@ -9,11 +9,11 @@
         "Build",
         "Release"
     ],
-    "author": "Alan Wales",
+    "author": "ProteanSoftware",
     "version": {
-        "Major": 2,
+        "Major": 1,
         "Minor": 0,
-        "Patch": 15
+        "Patch": 3
     },
     "demands": [
     ],
