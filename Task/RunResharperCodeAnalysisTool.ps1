@@ -99,6 +99,8 @@ if($inspectCodeResultsPathOverride){
     $inspectCodeResultsPath = $inspectCodeResultsPathOverride
 }
 
+$inspectCodeResultsPathOutput =  "--output=""$inspectCodeResultsPath""";
+
 $severityLevels = @{"Hint" = 0; "Suggestion" = 1; "Warning" = 2; "Error" = 3}
 
 Write-Verbose "Using Resharper Code Analysis found at '$inspectCodeExePath'"
@@ -109,7 +111,7 @@ Write-Output "Inspecting code for $solutionOrProjectPath"
 
 $additionalArguments = $additionalArguments -replace '"',''''
 
-$arguments = @($solutionOrProjectFullPath, $inspectCodeResultsPath) -join ($additionalArguments -split " ")
+$arguments = @($solutionOrProjectFullPath) + ($additionalArguments -split " ") + @($inspectCodeResultsPathOutput);
 
 Write-Output "Invoking InspectCode.exe using arguments $arguments"
 

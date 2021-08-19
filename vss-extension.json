@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "resharper-code-inspections",
     "name": "Resharper Code Quality Analysis",
-    "version": "1.0.3",
+    "version": "1.0.11",
     "publisher": "AshleyMedway",
 	"public": false,
     "targets": [
