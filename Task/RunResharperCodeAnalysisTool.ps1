@@ -109,7 +109,7 @@ Write-Output "Inspecting code for $solutionOrProjectPath"
 
 $additionalArguments = $additionalArguments -replace '"',''''
 
-$arguments = {$solutionOrProjectFullPath,$inspectCodeResultsPath} -join ($additionalArguments -split " ")
+$arguments = @($solutionOrProjectFullPath, $inspectCodeResultsPath) -join ($additionalArguments -split " ")
 
 Write-Output "Invoking InspectCode.exe using arguments $arguments"
 
